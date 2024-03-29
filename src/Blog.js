@@ -15,7 +15,7 @@ import Footer from './Footer';
 import post1 from './blog-post.1.md';
 import post2 from './blog-post.2.md';
 import post3 from './blog-post.3.md';
-import {sections} from './sectionsArray'
+import {sections} from './sectionsArray';
 import {newArray} from './sectionsArray'
 
 
@@ -78,13 +78,14 @@ const defaultTheme = createTheme();
 
 export default function Blog() {
 
+  const imagePath = 'https://www.associazioni-italiane.org/wp-content/uploads/2019/10/1-logo-apirp_scritta_ridotto.jpg';
   console.log("post 1: "+post1);
 
   return (
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
       <Container maxWidth="lg">
-        <Header title="Blog" sections={sections} />
+        <Header title="Blog" imagePath={imagePath} sections={sections} />
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
           <Grid container spacing={4}>

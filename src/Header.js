@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 
 function Header(props) {
-  const { sections, title } = props;
+  const { sections, title, imagePath } = props;
 
   return (
     <React.Fragment>
@@ -23,6 +23,7 @@ function Header(props) {
           sx={{ flex: 1 }}
         >
           {title}
+          <img src={imagePath} alt="test" />
         </Typography>
         <IconButton>
           <SearchIcon />
@@ -61,6 +62,7 @@ Header.propTypes = {
     }),
   ).isRequired,
   title: PropTypes.string.isRequired,
+  imagePath: PropTypes.string.isRequired,
 };
 
 export default Header;
