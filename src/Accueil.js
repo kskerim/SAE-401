@@ -85,7 +85,7 @@ const defaultTheme = createTheme({
   },
 });
 
-export default function Blog() {
+export default function Accueil() {
 
   const imagePath = 'https://www.associazioni-italiane.org/wp-content/uploads/2019/10/1-logo-apirp_scritta_ridotto.jpg';
   console.log("post 1: "+post1);
@@ -114,8 +114,8 @@ export default function Blog() {
         </main>
       </Container>
       <Footer
-        title="Footer"
-        description="Something here to give the footer a purpose!"
+        title=""
+        description="APIRP - Site de l'Association des Professeurs d'Italien de la Région Parisienne"
       />
     </ThemeProvider>
   );

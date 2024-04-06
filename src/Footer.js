@@ -9,8 +9,11 @@ function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
+      <Link color="inherit" href="https://github.com/kskerim">
+        Kerim Kasikci
+      </Link>{' / '}
+      <Link color="inherit" href="https://github.com/Dromach">
+        Yann Tauron
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}

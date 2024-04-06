@@ -6,10 +6,8 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from '../Header';
-import MainFeaturedPost from '../MainFeaturedPost';
 import Footer from '../Footer';
-import {sections} from '../sectionsArray'
-
+import {sections} from '../sectionsArray';
 
 
 
@@ -25,7 +23,7 @@ const defaultTheme = createTheme({
   },
 });
 
-export default function Enseigner() {
+export default function Liens() {
   const imagePath = 'https://www.associazioni-italiane.org/wp-content/uploads/2019/10/1-logo-apirp_scritta_ridotto.jpg';
   return (
     <ThemeProvider theme={defaultTheme}>
@@ -33,7 +31,7 @@ export default function Enseigner() {
       <Container maxWidth="lg">
       <Header title="" imagePath={imagePath} sections={sections} />
         <main>
-            <p> Science page </p>
+            <p> Culture page </p>
 
         </main>
       </Container>
