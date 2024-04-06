@@ -1,16 +1,14 @@
 import './App.css';
 import Blog from './Blog.js';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Technology from "./pagesBlog/Technology";
-import Design from './pagesBlog/Design';
-import Culture from './pagesBlog/Culture';
-import Business from './pagesBlog/Business';
-import Politics from './pagesBlog/Politics';
-import Opinion from './pagesBlog/Opinion';
-import Science from './pagesBlog/Science';
-import Health from './pagesBlog/Health';
-import Style from './pagesBlog/Style';
-import Travel from './pagesBlog/Travel';
+import Forum from "./pagesBlog/Forum";
+import Activites from './pagesBlog/Activites';
+import NousConnaitre from './pagesBlog/NousConnaitre';
+import Adherer from './pagesBlog/Adherer';
+import Promouvoir from './pagesBlog/Promouvoir';
+import Apprendre from './pagesBlog/Apprendre';
+import Enseigner from './pagesBlog/Enseigner';
+import Divers from './pagesBlog/Divers';
 
 function App() {
   return (
@@ -18,16 +16,13 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route index element={<Blog />} />
-          <Route path="technology" element={<Technology />} />
-          <Route path="design" element={<Design />} />
-          <Route path="culture" element={<Culture />} />
-          <Route path="business" element={<Business />} />
-          <Route path="politics" element={<Politics />} />
-          <Route path="opinion" element={<Opinion />} />
-          <Route path="science" element={<Science />} />
-          <Route path="health" element={<Health />} />
-          <Route path="style" element={<Style />} />
-          <Route path="travel" element={<Travel />} />
+          <Route path="Forum" element={<Forum />} />
+          <Route path="Activités" element={<Activites />} />
+          <Route path="Adhérer" element={<Adherer />} />
+          <Route path="Promouvoir" element={<Promouvoir />} />
+          <Route path="Apprendre" element={<Apprendre />} />
+          <Route path="Enseigner" element={<Enseigner />} />
+          <Route path="Divers" element={<Divers />} />
         </Routes>
       </BrowserRouter>
     </div>

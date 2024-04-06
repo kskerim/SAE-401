@@ -6,6 +6,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from '../Header';
+import MainFeaturedPost from '../MainFeaturedPost';
 import Footer from '../Footer';
 import {sections} from '../sectionsArray'
 
@@ -13,16 +14,26 @@ import {sections} from '../sectionsArray'
 
 
 // TODO remove, this demo shouldn't need to reset the theme.
-const defaultTheme = createTheme();
+const defaultTheme = createTheme({
+  palette: {
+    primary: {
+      main: '#009246',
+    },
+    },
+    secondary: {
+      main: '#ce2b37',
+  },
+});
 
-export default function Business() {
+export default function Apprendre() {
+  const imagePath = 'https://www.associazioni-italiane.org/wp-content/uploads/2019/10/1-logo-apirp_scritta_ridotto.jpg';
   return (
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
       <Container maxWidth="lg">
-        <Header title="Blog" sections={sections} />
+      <Header title="" imagePath={imagePath} sections={sections} />
         <main>
-            <p> Business page </p>
+            <p> Politics page </p>
 
         </main>
       </Container>

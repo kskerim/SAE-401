@@ -6,9 +6,23 @@ import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
+import ButtonGroup from '@mui/material/ButtonGroup';
+
+import DropdownMenu from './DropdownMenu';
+
+
 
 function Header(props) {
-  const { sections, title, imagePath } = props;
+
+  const { sections, title, imagePath} = props;
+  
+  const createHandleMenuClick = (menuItem) => {
+    return () => {
+      console.log(`Clicked on ${menuItem}`);
+    };
+  };
+
+  const menuItems = ['Profile', 'Language settings', 'Log out'];
 
   return (
     <React.Fragment>
@@ -23,7 +37,7 @@ function Header(props) {
           sx={{ flex: 1 }}
         >
           {title}
-          <img src={imagePath} alt="test" />
+          <img src={imagePath} alt="Logo APIRP" style={{ width: '75px', height: '75px' }} />
         </Typography>
         <IconButton>
           <SearchIcon />
@@ -37,18 +51,27 @@ function Header(props) {
         variant="dense"
         sx={{ justifyContent: 'space-between', overflowX: 'auto' }}
       >
+        <ButtonGroup variant="contained" aria-label="text button group" style={{ justifyContent: 'center'}}>
         {sections.map((section) => (
-          <Link
-            color="inherit"
-            noWrap
-            key={section.title}
-            variant="body2"
-            href={section.url}
-            sx={{ p: 1, flexShrink: 0 }}
-          >
-            {section.title}
-          </Link>
+          section.dropdown ? (
+            <DropdownMenu title={section.title} items={section.dropdown} handleMenuClick={createHandleMenuClick} maxWidth="125px" maxHeight="50px" />
+          ) : (
+            <Button style={{ maxWidth: '150px', maxHeight: '36px'}}>
+              <Link
+                color="inherit"
+                noWrap
+                key={section.title}
+                variant="body2"
+                href={section.url}
+                sx={{ p: 1, flexShrink: 0 }}
+                underline="none"
+              >
+                {section.title}
+              </Link>
+            </Button>
+          )
         ))}
+        </ButtonGroup>
       </Toolbar>
     </React.Fragment>
   );

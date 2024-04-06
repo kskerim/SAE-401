@@ -16,7 +16,7 @@ import post1 from './blog-post.1.md';
 import post2 from './blog-post.2.md';
 import post3 from './blog-post.3.md';
 import {sections} from './sectionsArray';
-import {newArray} from './sectionsArray'
+import {newArray} from './sectionsArray';
 
 
 const mainFeaturedPost = {
@@ -74,7 +74,16 @@ const sidebar = {
 };
 
 // TODO remove, this demo shouldn't need to reset the theme.
-const defaultTheme = createTheme();
+const defaultTheme = createTheme({
+  palette: {
+    primary: {
+      main: '#009246',
+    },
+    },
+    secondary: {
+      main: '#ce2b37',
+  },
+});
 
 export default function Blog() {
 
@@ -85,7 +94,7 @@ export default function Blog() {
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
       <Container maxWidth="lg">
-        <Header title="Blog" imagePath={imagePath} sections={sections} />
+        <Header title="" imagePath={imagePath} sections={sections} />
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
           <Grid container spacing={4}>
