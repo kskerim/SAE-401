@@ -33,6 +33,15 @@ export default function Contact() {
         <main>
             <p> Liens et contacts </p>
 
+            <h2 style={{ textAlign: 'center', color: '#009246' }}>Adresse mail: apirp.association@gmail.com</h2>
+            <p>Pour nous signaler tout changement de coordonnées personnelles (adresse de domicile, téléphone, courriel) ou professionnelles (changement d’établissement de rattachement, de statut, etc.), merci d’envoyer un courriel à : <strong>apirp.association@gmail.com.</strong> </p>
+
+            <p>Pour les renouvellement d’adhésion et pour les commandes de plaquettes pour la promotion de l’italien, nos adhérents peuvent aussi se servir des formulaires publiés dans les deux dernières page de notre bulletin annuel.</p>
+
+            <h2 style={{ textAlign: 'center', color: '#009246' }}>Facebook:</h2>
+            <p>Si vous souhaitez nous suivre :</p>
+
+            <a>https://m.facebook.com/APIRP</a>
         </main>
       </Container>
       <Footer

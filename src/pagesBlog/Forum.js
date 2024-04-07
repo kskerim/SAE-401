@@ -9,6 +9,7 @@ import Header from '../Header';
 import Footer from '../Footer';
 import {sections} from '../sectionsArray';
 import Article from '../Article';
+import ImageForum from '../img/ImageForum.jpg';
 
 
 
@@ -43,7 +44,7 @@ export default function Forum() {
           le bilan des activités de l'APIRP de cette année, le dossier ESABAC, le programme du concours de recrutement ainsi que des projets menés par nos
           adhérents. Voici le lien :  https://padlet.com/apirpassociation/apirp2020. L'intégralité du forum sera retransmise sur la page Facebook du Forum des
           Associations italiennes."
-          image="https://lh5.googleusercontent.com/HoJHn2Qwr_zXzgNwK6yYpl6jlY1oYv3wGmgjSz1tEUyxRuBwUB87Rid1Xet94Yb99ViR9A=w1280"
+          image={ImageForum}
           />
 
 

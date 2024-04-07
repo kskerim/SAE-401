@@ -11,7 +11,6 @@ import Elus from './pagesBlog/Elus';
 import Bulletins from './pagesBlog/Bulletins';
 import Contact from './pagesBlog/Contact';
 import Pourquoi from './pagesBlog/Pourquoi';
-import Fiche from './pagesBlog/Fiche';
 import Promouvoir from './pagesBlog/Promouvoir';
 import Secondaire from './pagesBlog/Secondaire';
 import Postbac from './pagesBlog/Postbac';
@@ -36,7 +35,6 @@ function App() {
             <Route path="Bulletins" element={<Bulletins />} />
             <Route path="Contact" element={<Contact />} />
             <Route path="Pourquoi" element={<Pourquoi />} />
-            <Route path="Fiche" element={<Fiche />} />
             <Route path="Promouvoir" element={<Promouvoir />} />
             <Route path="Secondaire" element={<Secondaire />} />
             <Route path="Postbac" element={<Postbac />} />
