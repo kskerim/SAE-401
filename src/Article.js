@@ -24,7 +24,7 @@ const Article = ({ title, content, image }) => {
     <div>
       <h2 style={{ textAlign: 'left', color: '#009246' }}>{title}</h2>
       <div style={{ display: 'flex'}}>
-        <img src={image} alt={title} style={{ marginRight: '20px' }}/>
+        <img src={image} alt={title} style={{ marginRight: '20px', width: '100%', height: '50%' }}/>
         <p style={{ textAlign: 'left'}}>
           {contentParts}
         </p>

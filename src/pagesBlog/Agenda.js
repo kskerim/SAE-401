@@ -31,7 +31,7 @@ export default function Agenda() {
       <Container maxWidth="lg">
       <Header title="" imagePath={imagePath} sections={sections} />
         <main>
-            <p> Culture page </p>
+            <p> Agenda page </p>
 
         </main>
       </Container>
