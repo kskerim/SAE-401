@@ -31,13 +31,13 @@ export default function Contact() {
       <Container maxWidth="xl">
       <Header title="" imagePath={imagePath} sections={sections} />
         <main>
-            <p> Culture page </p>
+            <p> Liens et contacts </p>
 
         </main>
       </Container>
       <Footer
         title="Footer"
-        description="Something here to give the footer a purpose!"
+        description="APIRP - Site de l'Association des Professeurs d'Italien de la Région Parisienne"
       />
     </ThemeProvider>
   );
