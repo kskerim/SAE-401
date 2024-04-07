@@ -28,7 +28,7 @@ export default function Postbac() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
       <Header title="" imagePath={imagePath} sections={sections} />
         <main>
             <p> Culture page </p>

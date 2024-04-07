@@ -6,9 +6,8 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from '../Header';
-import MainFeaturedPost from '../MainFeaturedPost';
 import Footer from '../Footer';
-import {sections} from '../sectionsArray'
+import {sections} from '../sectionsArray';
 
 
 
@@ -30,7 +29,7 @@ export default function Promouvoir() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
       <Header title="" imagePath={imagePath} sections={sections} />
         <main>
             <p> Opinion page </p>

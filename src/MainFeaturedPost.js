@@ -23,7 +23,7 @@ function MainFeaturedPost(props) {
       }}
     >
       {/* Increase the priority of the hero background image */}
-      {<img style={{ display: 'none' }} src={post.image} alt={post.imageText} />}
+      {<img style={{ display: 'none', width:'50%', height:'auto' }} src={post.image} alt={post.imageText} />}
       <Box
         sx={{
           position: 'absolute',

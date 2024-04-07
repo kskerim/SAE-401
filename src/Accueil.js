@@ -13,59 +13,40 @@ import Main from './Main';
 import Sidebar from './Sidebar';
 import Footer from './Footer';
 import post1 from './blog-post.1.md';
-import post2 from './blog-post.2.md';
-import post3 from './blog-post.3.md';
 import {sections} from './sectionsArray';
-import {newArray} from './sectionsArray';
-
 
 const mainFeaturedPost = {
-  title: 'Title of a longer featured blog post',
-  description:
-    "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
-  image: 'https://source.unsplash.com/random?wallpapers',
+  title: "Association des Professeurs d' Italien de la région Parisienne",
+  image: 'https://lh4.googleusercontent.com/fmzfUey-mN9WneMeBuXNbyIjXnxTRQN5V1Lab57fOT8mCzAicInr0u2-opEwWYyB=w16383',
   imageText: 'main image description',
-  linkText: 'Continue reading…',
 };
 
 const featuredPosts = [
   {
-    title: 'Featured post',
-    date: 'Nov 12',
-    description:
-      'This is a wider card with supporting text below as a natural lead-in to additional content.',
-    image: 'https://source.unsplash.com/random?wallpapers',
-    imageLabel: 'Image Text',
+    title: "Bienvenue sur le site de l'Association des Professeurs d'Italien de la Région Parisienne", 
+    date: "7 Avril 2024",
+    description:"Notre association a pour vocation : ▪D’établir et développer des liens de solidarité et d’amitié entre les italianistes de la région parisienne ;",
   },
   {
-    title: 'Post title',
-    date: 'Nov 11',
-    description:
-      'This is a wider card with supporting text below as a natural lead-in to additional content.',
-    image: 'https://source.unsplash.com/random?wallpapers',
-    imageLabel: 'Image Text',
+    title: "Bienvenue sur le site de l'Association des Professeurs d'Italien de la Région Parisienne",
+    date: "7 Avril 2024",
+    description: "▪De renseigner les professeurs d’italien à tous niveaux sur la diffusion de l’enseignement de l’italien en région parisienne ▪De promouvoir de l’enseignement de l’italien...",
   },
 ];
 
-const posts = [post1, post2, post3];
+const posts = [post1];
 
 const sidebar = {
-  title: 'About',
+  title: 'À propos',
   description:
-    'Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.',
-  archives: [
-    { title: 'March 2020', url: '#' },
-    { title: 'February 2020', url: '#' },
-    { title: 'January 2020', url: '#' },
-    { title: 'November 1999', url: '#' },
-    { title: 'October 1999', url: '#' },
-    { title: 'September 1999', url: '#' },
-    { title: 'August 1999', url: '#' },
-    { title: 'July 1999', url: '#' },
-    { title: 'June 1999', url: '#' },
-    { title: 'May 1999', url: '#' },
-    { title: 'April 1999', url: '#' },
-  ],
+    "Projet réaliser par Yann TAURON, Kerim KASIKCI étudiant en BUT Métier du multimédia et de l'internet.",
+
+  //  inutile
+  // archives: [
+  //  { title: 'Remonter haut de page', url: '#' },
+  // ],
+  //  inutile
+
   social: [
     { name: 'GitHub', icon: GitHubIcon },
     { name: 'X', icon: XIcon },
@@ -93,8 +74,9 @@ export default function Accueil() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
         <Header title="" imagePath={imagePath} sections={sections} />
+
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
           <Grid container spacing={4}>
@@ -103,7 +85,8 @@ export default function Accueil() {
             ))}
           </Grid>
           <Grid container spacing={5} sx={{ mt: 3 }}>
-            <Main title="From the firehose" posts={posts} />
+            <Main title="A LA UNE..." posts={posts} />
+            
             <Sidebar
               title={sidebar.title}
               description={sidebar.description}
@@ -112,6 +95,7 @@ export default function Accueil() {
             />
           </Grid>
         </main>
+
       </Container>
       <Footer
         title=""

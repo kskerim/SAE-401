@@ -22,8 +22,6 @@ function Header(props) {
     };
   };
 
-  const menuItems = ['Profile', 'Language settings', 'Log out'];
-
   return (
     <React.Fragment>
       <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
@@ -49,28 +47,28 @@ function Header(props) {
       <Toolbar
         component="nav"
         variant="dense"
-        sx={{ justifyContent: 'space-between', overflowX: 'auto' }}
+        sx={{ justifyContent: 'center', overflowX: 'auto', width: '100%' }}
       >
-        <ButtonGroup variant="contained" aria-label="text button group" style={{ justifyContent: 'center'}}>
-        {sections.map((section) => (
-          section.dropdown ? (
-            <DropdownMenu title={section.title} items={section.dropdown} handleMenuClick={createHandleMenuClick} maxWidth="125px" maxHeight="50px" />
-          ) : (
-            <Button style={{ maxWidth: '150px', maxHeight: '36px'}}>
-              <Link
-                color="inherit"
-                noWrap
-                key={section.title}
-                variant="body2"
-                href={section.url}
-                sx={{ p: 1, flexShrink: 0 }}
-                underline="none"
-              >
-                {section.title}
-              </Link>
-            </Button>
-          )
-        ))}
+        <ButtonGroup variant="contained" aria-label="text button group">
+          {sections.map((section) => (
+            section.dropdown ? (
+              <DropdownMenu title={section.title} items={section.dropdown} handleMenuClick={createHandleMenuClick} maxWidth="250px" maxHeight="50px" />
+            ) : (
+              <Button style={{ maxWidth: '150px', maxHeight: '36px'}}>
+                <Link
+                  color="inherit"
+                  noWrap
+                  key={section.title}
+                  variant="body2"
+                  href={section.url}
+                  sx={{ p: 1, flexShrink: 0 }}
+                  underline="none"
+                >
+                  {section.title}
+                </Link>
+              </Button>
+            )
+          ))}
         </ButtonGroup>
       </Toolbar>
     </React.Fragment>

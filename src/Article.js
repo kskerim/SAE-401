@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Grid from '@mui/material/Grid';
 
 const Article = ({ title, content, image }) => {
   const link = 'https://padlet.com/apirpassociation/apirp2020';
-  const contentParts = content.split('\n\n').map((part, index) => {
+  const contentParts = content ? content.split('\n\n').map((part, index) => {
     const subParts = part.split(link);
     return (
       <React.Fragment key={index}>
@@ -18,16 +19,22 @@ const Article = ({ title, content, image }) => {
         <br />
       </React.Fragment>
     );
-  });
+  }): null;
   
   return (
     <div>
       <h2 style={{ textAlign: 'left', color: '#009246' }}>{title}</h2>
       <div style={{ display: 'flex'}}>
-        <img src={image} alt={title} style={{ marginRight: '20px', width: '100%', height: '50%' }}/>
-        <p style={{ textAlign: 'left'}}>
-          {contentParts}
-        </p>
+        <Grid container spacing={2}>
+          <Grid item xs={4}>
+            <img src={image} alt={title} style={{ marginRight: '20px', width: '100%', height: 'auto' }}/>
+          </Grid>
+          <Grid item xs={8}>
+            <p style={{ textAlign: 'left'}}>
+              {contentParts}
+            </p>
+          </Grid>
+        </Grid>
       </div>
     </div>
   );

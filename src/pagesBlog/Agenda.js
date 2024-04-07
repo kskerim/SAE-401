@@ -28,7 +28,7 @@ export default function Agenda() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
       <Header title="" imagePath={imagePath} sections={sections} />
         <main>
             <p> Agenda page </p>

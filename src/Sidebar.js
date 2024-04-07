@@ -17,10 +17,7 @@ function Sidebar(props) {
         </Typography>
         <Typography>{description}</Typography>
       </Paper>
-      <Typography variant="h6" gutterBottom sx={{ mt: 3 }}>
-        Archives
-      </Typography>
-      {archives.map((archive) => (
+      {archives && archives.map((archive) => (
         <Link display="block" variant="body1" href={archive.url} key={archive.title}>
           {archive.title}
         </Link>
@@ -28,7 +25,7 @@ function Sidebar(props) {
       <Typography variant="h6" gutterBottom sx={{ mt: 3 }}>
         Social
       </Typography>
-      {social.map((network) => (
+      {social && social.map((network) => (
         <Link
           display="block"
           variant="body1"
@@ -52,14 +49,14 @@ Sidebar.propTypes = {
       title: PropTypes.string.isRequired,
       url: PropTypes.string.isRequired,
     }),
-  ).isRequired,
+  ),
   description: PropTypes.string.isRequired,
   social: PropTypes.arrayOf(
     PropTypes.shape({
       icon: PropTypes.elementType,
       name: PropTypes.string.isRequired,
     }),
-  ).isRequired,
+  ),
   title: PropTypes.string.isRequired,
 };
 

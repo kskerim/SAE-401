@@ -30,7 +30,7 @@ export default function Forum() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
       <Header title="" imagePath={imagePath} sections={sections} />
         <main>
           <p> Forum des associations franco-italiennes </p>
