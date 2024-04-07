@@ -11,7 +11,6 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import DropdownMenu from './DropdownMenu';
 
 
-
 function Header(props) {
 
   const { sections, title, imagePath} = props;
@@ -24,7 +23,7 @@ function Header(props) {
 
   return (
     <React.Fragment>
-      <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
+      <Toolbar sx={{ borderBottom: 1, borderColor: 'divider',  }}>
         <Button size="small">Subscribe</Button>
         <Typography
           component="h2"

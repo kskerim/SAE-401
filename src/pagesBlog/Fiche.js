@@ -36,8 +36,8 @@ export default function Fiche() {
         </main>
       </Container>
       <Footer
-        title="Footer"
-        description="Something here to give the footer a purpose!"
+        title=""
+        description="APIRP - Site de l'Association des Professeurs d'Italien de la Région Parisienne"
       />
     </ThemeProvider>
   );

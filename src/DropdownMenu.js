@@ -2,9 +2,10 @@ import React from 'react';
 import { Button, Menu, MenuItem, useTheme } from '@mui/material';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { Link } from 'react-router-dom';
+import Box from '@mui/material/Box';
 
 function DropdownMenu({ title, items, handleMenuClick, maxWidth, maxHeight }) {
-  const theme = useTheme();
+  const defaultTheme = useTheme();
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handleClick = (event) => {
@@ -34,13 +35,17 @@ function DropdownMenu({ title, items, handleMenuClick, maxWidth, maxHeight }) {
         onClose={handleClose}
         PaperProps={{
           style: {
-            backgroundColor: theme.palette.primary.main,
+            backgroundColor: defaultTheme.palette.primary.main,
             color: 'white',
           },
         }}
       >
         {items.map((item, index) => (
-          <MenuItem key={index} onClick={handleMenuClick(item)}>
+          <MenuItem 
+            key={index} 
+            onClick={() => handleMenuClick(item)}
+            style={{ display: 'flex', flexDirection: 'column', padding: '10px', color: 'text.primary', bgcolor: 'background.paper' }}
+          >
             <Link to={item.url} style={{ color: 'inherit', textDecoration: 'none' }}>
               {item.title}
             </Link>

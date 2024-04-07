@@ -36,7 +36,7 @@ export default function Contact() {
         </main>
       </Container>
       <Footer
-        title="Footer"
+        title=""
         description="APIRP - Site de l'Association des Professeurs d'Italien de la Région Parisienne"
       />
     </ThemeProvider>

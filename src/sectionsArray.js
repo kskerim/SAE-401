@@ -8,7 +8,7 @@ export const sections = [
   { title: 'Adhérer', dropdown: [{ title: "Pourquoi et qui peut adhérer", url: '/Pourquoi' }, { title: "Fiche d'adhésion", url: '/Fiche' }] },
   { title: 'Promouvoir', url: '/Promouvoir' },
   { title: 'Apprendre', dropdown: [{ title: "L'italien dans le secondaire", url: '/Secondaire' }, { title: "L'italien après le bac", url: '/Postbac' }] },
-  { title: 'Enseigner', dropdown: [{ title: "Devenir enseignant", url: '/Enseignant' }, { title: "Annales baccalauréat", url: '/Annales' }, { title: "Programmes", url: '/Programmes' }] },
+  { title: 'Enseigner', dropdown: [{ title: "Devenir enseignant", url: '/Enseignant' }, { title: "Programmes", url: '/Programmes' }] },
   { title: 'Divers', dropdown: [{ title: "Actualité", url: '/Actualite' }, { title: "Liens et contacts", url: '/Liens' }, { title: "Agenda", url: '/Agenda'}] },
 ];
 

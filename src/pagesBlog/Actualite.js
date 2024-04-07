@@ -51,8 +51,8 @@ export default function Actualite() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
-      <Header title="Actualités" imagePath={imagePath} sections={sections} />
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
+      <Header title="" imagePath={imagePath} sections={sections} />
         <main>
           {articles.map((article, index) => (
             <Article key={index} {...article} />
