@@ -17,7 +17,7 @@ import {sections} from './sectionsArray';
 
 const mainFeaturedPost = {
   title: "Association des Professeurs d' Italien de la région Parisienne",
-  image: 'https://lh4.googleusercontent.com/fmzfUey-mN9WneMeBuXNbyIjXnxTRQN5V1Lab57fOT8mCzAicInr0u2-opEwWYyB=w16383',
+  image: 'https://cdn.discordapp.com/attachments/1069605959858663455/1226643821635305493/IMG_3382.jpg?ex=66258415&is=66130f15&hm=3cb9cf06b156abf21d858885e4311ae6f38c7670becb3e89a0687fd7bc257440&',
   imageText: 'main image description',
 };
 

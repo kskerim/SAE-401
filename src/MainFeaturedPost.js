@@ -11,19 +11,19 @@ function MainFeaturedPost(props) {
 
   return (
     <Paper
-      sx={{
-        position: 'relative',
-        backgroundColor: 'grey.800',
-        color: '#fff',
-        mb: 4,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
-        backgroundImage: `url(${post.image})`,
-      }}
-    >
+  sx={{
+    position: 'relative',
+    backgroundColor: 'grey.800',
+    color: '#fff',
+    mb: 4,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'bottom',
+    backgroundImage: `url(${post.image})`,
+  }}
+>
       {/* Increase the priority of the hero background image */}
-      {<img style={{ display: 'none', width:'50%', height:'auto' }} src={post.image} alt={post.imageText} />}
+      {<img style={{ display: 'none', width:'50%', height:'' }} src={post.image} alt={post.imageText} />}
       <Box
         sx={{
           position: 'absolute',
